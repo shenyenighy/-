@@ -25,7 +25,7 @@ def geturl():
                 urls.append(url)
                 loop = asyncio.get_event_loop()
                 loop.run_until_complete(main())
-                time.sleep(0.8)
+                time.sleep(0.9)
 async def catch(url):
     async with aiohttp.ClientSession() as session:
         async with session.get(url, headers=headers) as resp:
